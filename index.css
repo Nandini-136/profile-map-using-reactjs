@@ -1,0 +1,77 @@
+/* Importing Leaflet's essential CSS for map functionality */
+@import "~leaflet/dist/leaflet.css";
+
+/* General body styles to reset margin and set base font */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Simplified font-family with a modern look */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f4f4f8; /* Light gray background for a modern look */
+  color: #333; /* Darker text for better readability */
+  line-height: 1.6; /* Increased line-height for better text readability */
+}
+
+/* Ensures all elements use border-box sizing for easier dimension calculations */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Universal button styling for a modern and flat design */
+button {
+  background-color: #007BFF; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #462ab8; /* Darker shade of blue for hover effect */
+}
+
+/* Styling for code elements, with a more modern monospace font and background */
+code {
+  font-family: 'Fira Code', monospace; /* Modern monospace font */
+  background-color: #eee; /* Light gray background for code blocks */
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+/* Header styles for consistent, modern typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #222; /* Slightly darker than body text for emphasis */
+  font-weight: 600; /* Medium weight for headers */
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+/* Enhanced link styling for better interactivity */
+a {
+  color: #007BFF; /* Bootstrap primary blue for links */
+  text-decoration: none; /* No underline to clean up appearance */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for clarity */
+}
+
+/* Custom styling for containers and cards if needed */
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center aligning the container */
+  padding: 20px;
+}
+
+.card {
+  background: rgb(238, 241, 232);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for modern look */
+  margin-top: 20px;
+}
